@@ -1,0 +1,2 @@
+object htel ka property ko tone tae akar mhr create loke kae tae object name nk tr call tone ya ml
+constructor nk call m tone ya wo
