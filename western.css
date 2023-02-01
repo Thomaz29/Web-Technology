@@ -1,0 +1,162 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing:border-box;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --main-color:#100905;
+    --text-color:rgb(17, 3, 3);
+    background-color: #fff;
+    background-size: cover;
+
+}
+::selection{
+    background-var(--main-color);
+    color: #fff;
+}
+body{
+    color:var(--text-color);
+    background:var(--bg-color);
+
+}
+header{
+    position: relative;
+    top:0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 170px;
+    background-var(--bg-color);
+}
+
+.logo{
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 2.4rem;
+
+}
+.navbar{
+    display: flex;
+
+}
+.navbar a{
+    color:var(--text-color);
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+
+
+}
+.navbar li{
+    text-decoration: none;
+}
+.navbar a:hover{
+    color: var(--main-color);
+    transition: .4s;
+
+}
+#menu-icon{
+    font-size: 2rem;
+    cursor: pointer;
+
+}
+section{
+    padding: 70px 17%;
+
+}
+.home{
+    width: 100%;
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+
+}
+
+.home-img img{
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+    margin-top: 50px;
+}
+
+.btn:hover{
+    transform: scale(1.2) translate(10px);
+    transition: .4s;
+}
+
+.about{
+    display: grid;
+    gird-template-columns: repeat();
+    margin-top: 5px;
+}
+.about-img img{
+    width: 300px;
+    height: 50vh;
+}
+.items{
+    object-fit: fill;
+    display: flex;
+    background-size: contain;
+}
+
+.item{
+
+    height: 500px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    background-size: cover;
+
+}
+
+.item img{
+    height: 400px;
+    width: 300px;
+    border-radius: 30px;
+    background-size: cover;
+
+}
+
+.item h4{
+    text-align: center;
+    font-size: 25px;
+
+}
+
+.intro{
+    height: 70px;
+    width: 300px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    background: rgb(27, 27, 27,.5);
+    color: white;
+    text-align: center;
+    top: 1900px;
+    transition: .5s;
+}
+
+
+.item:horver{
+    cursor: pointer;
+}
+
+.item:hover .intro{
+    height: 60px;
+    bottom: 240px;
+    background: pink;
+}
+
+.item:hover img{
+    transform: scale(1.1) rotate(-3deg);
+}
